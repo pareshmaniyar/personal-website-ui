@@ -1,0 +1,34 @@
+.main-section {
+    display: flex;
+    background-color: #000;
+    .main-image {
+        /* The image used */
+        background-image: url("../imgs/paresh2.JPG");
+        /* Set a specific height */
+        min-height: 500px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -101px;
+        background-position-x: 328px;
+    }
+    .intro-text {
+        color: white;
+        position: absolute;
+        font-family: 'Kalam', cursive;
+        margin-left: 160px;
+        margin-top: 160px;
+        padding-left: 10px;
+        border-left: 6px solid #8CC53D;
+        text-align: left;
+        width: 400px;
+    }
+    .intro-text > div {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 5px 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
