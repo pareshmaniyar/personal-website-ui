@@ -1,34 +1,62 @@
-.main-section {
-    display: flex;
-    background-color: #000;
-    .main-image {
-        /* The image used */
-        background-image: url("../imgs/paresh2.JPG");
-        /* Set a specific height */
-        min-height: 500px;
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: -101px;
-        background-position-x: 328px;
+.home {
+    .main-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        // .main-image {
+        //     /* The image used */
+        //     background-image: url(../imgs/Paresh_Square_photo-highresolution2.png);
+        //     width: 740px;
+        //     height: 500px;
+        //     background-attachment: fixed;
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        //     background-size: contain;
+        //     background-position-y: 52px;
+        //     background-position-x: 572px;
+        // }
+        .profile-image {
+            width: 380px;
+            height: 500px;
+            padding-right: 40px;
+        }
+        .intro-text {
+            font-family: 'Kalam', cursive;
+            margin-left: 18%;
+            margin-top: 160px;
+            padding-left: 10px;
+            border-left: 6px solid #8CC53D;
+            text-align: left;
+            width: 400px;
+            height: max-content;
+        }
+        @media only screen and (max-width: 795px) {
+            .intro-text {
+                position: absolute;
+                font-family: 'Kalam', cursive;
+                margin-left: 50px;
+                margin-top: 365px;
+                padding-left: 10px;
+                border-left: 6px solid #8CC53D;
+                text-align: left;
+                width: 400px;
+                height: max-content;
+                left: 0;
+            }
+            .profile-image {
+                padding-right: 10px;
+            }
+        }
+        .intro-text > div {
+            font-size: 30px;
+            font-weight: 800;
+            margin: 5px 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
     }
-    .intro-text {
-        color: white;
-        position: absolute;
-        font-family: 'Kalam', cursive;
-        margin-left: 160px;
-        margin-top: 160px;
-        padding-left: 10px;
-        border-left: 6px solid #8CC53D;
-        text-align: left;
-        width: 400px;
-    }
-    .intro-text > div {
-        font-size: 30px;
-        font-weight: 800;
-        margin: 5px 0;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @media only screen and (max-width: 795px) {
+        .main-section {
+            justify-content: space-between;
+        }
     }
 }

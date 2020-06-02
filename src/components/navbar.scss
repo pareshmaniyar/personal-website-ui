@@ -2,10 +2,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: black;
-    color: rgba(242,244,246,.9);
     height: 60px;
+    padding: 0 20px;
     .nav-button {
+        color: #000;
+        text-decoration: none;
         margin: 10px;
         height: 33px;
         text-align: center;
@@ -13,7 +14,6 @@
         cursor: pointer;
     }
     .nav-button:hover {
-        color: #fff;
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid #000;
     }
 }

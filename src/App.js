@@ -3,7 +3,8 @@ import {
     Switch,
     Route,
     HashRouter as Router,
-    Link
+    Link,
+    Redirect
 } from 'react-router-dom';
 import './app.css';
 // const Home = lazy(() => import('./pages/home'));
@@ -17,7 +18,9 @@ class App extends React.Component {
     render(){
         return (
             <div className="app">
-                <NavBar/>
+                <Router>
+                    <NavBar/>
+                </Router>
                 <Router>
                     <Suspense fallback={<div>Loading...</div>}>
                         <Switch>
@@ -27,6 +30,7 @@ class App extends React.Component {
                             <Route path="/blog">
                                 <Blog/>
                             </Route>
+                            <Redirect to="/home" />
                         </Switch>
                     </Suspense>
                 </Router>

@@ -1,0 +1,24 @@
+.coding {
+    padding-bottom: 70px;
+    background-color: #9c9c9c;
+    .heading {
+        height: 160px;
+        text-align: center;
+        background-color: #177e2d;
+        color: #fff;
+        line-height: 160px;
+        margin: 0;
+        font-size: 2em;
+    }
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 30px;
+        font-size: 1.2em;
+        margin: 0 auto;
+        margin-top: -40px;
+        background-color: #fff;
+        width: 80%;
+    }
+}
