@@ -1,3 +1,28 @@
-.timeline {
-    background-color: #E3E3E3;
+.timeline-container {
+    background-color: #9c9c9c;
+    padding-bottom: 60px;
+    .heading {
+        height: 160px;
+        text-align: center;
+        color: #fff;
+        line-height: 160px;
+        margin: 0;
+        font-size: 2em;height: 160px;
+        text-align: center;
+        background-color: #1b1f6b;
+        color: #fff;
+        line-height: 160px;
+        margin: 0;
+        font-size: 2em;
+    }
+    .timeline {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #e8e8e8;
+    }
+    .timeline > div {
+        background-color: #e8e8e8;
+        margin-top: -30px;
+        padding-bottom: 60px;
+    }
 }

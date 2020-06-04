@@ -7,6 +7,7 @@ import './timeline-custom.scss';
 export default function Timeline() {
     return (
         <div className="timeline-container">
+            <h2 className="heading">My Work Timeline</h2>
             <div className="timeline">
                 <VerticalTimeline>
                     <VerticalTimelineElement
